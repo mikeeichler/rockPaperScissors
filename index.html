@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>RockPaperScissors</title>
+        <!-- Get Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div style="margin: 20px">
+            <h1>Rock Paper Scissors</h1>
+            <p>
+                Each player, please fill in a number, whilst the other player is not looking.
+                <ul>
+                    <li>Enter 1 for ROCK</li>
+                    <li>Enter 2 for PAPER</li>
+                    <li>Enter 3 for SCISSORS</li>
+                </ul>
+            </p>
+            <div id="form">
+                <form>
+                    <label for="player1">Player one</label>: <input maxlength="1" style="width: 20px" type="password" id="player1" /><br/>
+                    <label for="player2">Player two</label>: <input maxlength="1" style="width: 20px" type="password" id="player2" /><br/>
+                    <!-- changing the input to button ensures
+                        that the page won't reload on submit -->
+                    <input type="button" value="Submit" onclick="get_result()" /><br/>
+                </form>
+            </div>
+            <!-- the result is displayed here -->
+            <div id="result">
+            </div>
+        </div>
+        <!-- include the javascript -->
+        <script src="script.js"></script>
+    </body>
+</html>
